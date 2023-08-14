@@ -24,27 +24,27 @@
 
 
   <!-- main contains our scoreboard with points displayed for home and away -->
-  <main class="container-fluid">
-    <section class="row">
+  <main class="container-fluid text-light">
+    <section class="row justify-content-around">
       <!-- this color-8 is for board background -->
       <div class="col-8">
         <div class="row">
-          <div class="col-6">
+          <div class="col-6 text-center">
             <h1>HOME</h1>
           </div>
-          <div class="col-6">
+          <div class="col-6 text-center">
             <h1>AWAY</h1>
           </div>
         </div>
         <!-- home and away team score elements and IDs -->
         <!-- FIXME: when I click on any of the 4 buttons below, and the placeholder zero transitions to 1, the format changes just a tad. Need to make format consistent -->
         <div class="row">
-          <div class="col-6">
+          <div class="col-6 text-center">
             <h1 id="home-score">
               <h1 id="home-zero">0</h1>
             </h1>
           </div>
-          <div class="col-6">
+          <div class="col-6 text-center">
             <h1 id="away-score">
               <h1 id="away-zero">0</h1>
             </h1>
@@ -56,22 +56,22 @@
 
 
 
-
+  <!-- TODO: have to center the buttons and create a card for opaque background -->
   <footer class="container-fluid">
     <div class="row">
-      <div class="col-6">
-        <button onclick="clickHome1()">HOME +1</button>
+      <div class="col-6 text-center">
+        <button onclick="clickHome1()" class="button-class rounded text-light">HOME +1</button>
       </div>
-      <div class="col-6">
-        <button onclick="clickAway1()">AWAY +1</button>
+      <div class="col-6 text-center">
+        <button onclick="clickAway1()" class="button-class rounded text-light">AWAY +1</button>
       </div>
     </div>
     <div class="row">
-      <div class="col-6">
-        <button onclick="clickHome3()">HOME +3</button>
+      <div class="col-6 text-center">
+        <button onclick="clickHome3()" class="button-class rounded text-light">HOME +3</button>
       </div>
-      <div class="col-6">
-        <button onclick="clickAway3()">AWAY +3</button>
+      <div class="col-6 text-center">
+        <button onclick="clickAway3()" class="button-class rounded text-light">AWAY +3</button>
       </div>
     </div>
   </footer>
