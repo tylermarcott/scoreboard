@@ -76,10 +76,16 @@ function updateAwayDom() {
   elem.innerText = buttonClickAway
 }
 
-// FIXME: on dom reset, it doesn't bring back our zero placeholder. Need to take away d-block property
+
 function resetDom() {
   buttonClickHome = ''
   buttonClickAway = ''
+  updateHomeDom()
+  updateAwayDom()
+
+  buttonClickAway = 0
+  buttonClickHome = 0
+
   updateHomeDom()
   updateAwayDom()
 }

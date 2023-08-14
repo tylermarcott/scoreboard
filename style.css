@@ -1,27 +1,55 @@
 :root {
-  --clearBackground: rgba(0, 13, 255, 0.695);
+  --clearBackgroundDark: rgba(0, 13, 255, 0.695);
+  --clearBackgroundLight: rgba(58, 67, 239, 0.695);
+  --glow: 0px 0px 50px #99b5f9;
+  --smallGlow: 0px 0px 10px #99b5f9;
 }
 
 
 /* TODO: reset background image */
 body {
   background-color: gray;
-  /* background-image: url('https://images.unsplash.com/photo-1434648957308-5e6a859697e8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80');*/
+  background-image: url('https://images.unsplash.com/photo-1522778119026-d647f0596c20?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+}
+
+.hero-card {
+  background-color: var(--clearBackgroundDark);
+  min-width: 3vh;
+  min-height: 4vh;
+  box-shadow: var(--glow);
+}
+
+.small-card {
+  background-color: var(--clearBackgroundLight);
+  border: var(--glow);
 }
 
 .clear-background {
-  background-color: var(--clearBackground);
+  background-color: var(--clearBackgroundDark);
 }
 
 .glow {
-  box-shadow: 0px 0px 5px #fff;
+  box-shadow: var(--glow);
 }
 
 .button-class {
-  background-color: var(--clearBackground);
+  background-color: var(--clearBackgroundDark);
+  box-shadow: var(--smallGlow);
   border: none;
   padding-left: 2em;
   padding-right: 2em;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-size: 20pt;
+}
+
+.reset-button {
+  background-color: maroon;
+  border: none;
+  font-size: 20pt;
+  margin: 2vh;
+}
+
+.large-font {
+  font-size: 150pt;
 }

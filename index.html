@@ -16,7 +16,7 @@
   <!-- header just contains our right side button -->
   <header class="container-fluid">
     <section class="row justify-content-end">
-      <button class="btn btn-primary col-3" onclick="resetDom()">RESET</button>
+      <button class="btn btn-primary col-3 reset-button text-light" onclick="resetDom()">RESET</button>
     </section>
   </header>
 
@@ -27,7 +27,7 @@
   <main class="container-fluid text-light">
     <section class="row justify-content-around">
       <!-- this color-8 is for board background -->
-      <div class="col-8">
+      <div class="col-8 hero-card p-5 rounded border border-info border border-2">
         <div class="row">
           <div class="col-6 text-center">
             <h1>HOME</h1>
@@ -37,16 +37,16 @@
           </div>
         </div>
         <!-- home and away team score elements and IDs -->
-        <!-- FIXME: when I click on any of the 4 buttons below, and the placeholder zero transitions to 1, the format changes just a tad. Need to make format consistent -->
+        <!-- FIXME: my d-none add from JS is also deleting all my classes that I need for font size and my -->
         <div class="row">
           <div class="col-6 text-center">
-            <h1 id="home-score">
-              <h1 id="home-zero">0</h1>
+            <h1 id="home-score" class="large-font">
+              <h1 id="home-zero" class="rounded large-font">0</h1>
             </h1>
           </div>
           <div class="col-6 text-center">
-            <h1 id="away-score">
-              <h1 id="away-zero">0</h1>
+            <h1 id="away-score" class="large-font">
+              <h1 id="away-zero" class="rounded large-font">0</h1>
             </h1>
           </div>
         </div>
@@ -58,7 +58,7 @@
 
   <!-- TODO: have to center the buttons and create a card for opaque background -->
   <footer class="container-fluid">
-    <div class="row">
+    <div class="row m-2">
       <div class="col-6 text-center">
         <button onclick="clickHome1()" class="button-class rounded text-light">HOME +1</button>
       </div>
@@ -66,7 +66,7 @@
         <button onclick="clickAway1()" class="button-class rounded text-light">AWAY +1</button>
       </div>
     </div>
-    <div class="row">
+    <div class="row m-2">
       <div class="col-6 text-center">
         <button onclick="clickHome3()" class="button-class rounded text-light">HOME +3</button>
       </div>
