@@ -4,22 +4,6 @@ let away = 0
 let buttonClickHome = ''
 let buttonClickAway = ''
 
-
-function reset() {
-  // home++
-  // console.log(home)
-}
-
-// function homeIncrease() {
-//   home++
-//   console.log(home)
-// }
-
-// function awayIncrease() {
-//   away++
-//   console.log(away)
-// }
-
 function clickHome1() {
   console.log('clicked home')
   buttonClickHome++
@@ -78,17 +62,20 @@ function updateAwayDom() {
 
 
 function resetDom() {
-  buttonClickHome = ''
-  buttonClickAway = ''
-  updateHomeDom()
-  updateAwayDom()
-
-  buttonClickAway = 0
   buttonClickHome = 0
-
+  buttonClickAway = 0
   updateHomeDom()
   updateAwayDom()
 }
 
 
+// TODO: implement this in code
+function winReset() {
+  if (home == 15) {
+    window.alert('Home Team wins!')
+  }
+  else if (away == 15) {
+    window.alert('Away Team wins... BOOOOOOOOO!!!!!!!!!!!!!')
+  }
+}
 

@@ -27,7 +27,7 @@
   <main class="container-fluid text-light">
     <section class="row justify-content-around">
       <!-- this color-8 is for board background -->
-      <div class="col-8 hero-card p-5 rounded border border-info border border-2">
+      <div class="col-8 hero-card p-5 rounded border border-primary border border-2">
         <div class="row">
           <div class="col-6 text-center">
             <h1>HOME</h1>
@@ -40,14 +40,18 @@
         <!-- FIXME: my d-none add from JS is also deleting all my classes that I need for font size and my -->
         <div class="row">
           <div class="col-6 text-center">
-            <h1 id="home-score" class="large-font">
-              <h1 id="home-zero" class="rounded large-font">0</h1>
-            </h1>
+            <div class="small-card rounded border border-info">
+              <h1 id="home-score" class="large-font">
+                <h1 id="home-zero" class="rounded large-font">0</h1>
+              </h1>
+            </div>
           </div>
           <div class="col-6 text-center">
-            <h1 id="away-score" class="large-font">
-              <h1 id="away-zero" class="rounded large-font">0</h1>
-            </h1>
+            <div class="small-card rounded border border-info">
+              <h1 id="away-score" class="large-font">
+                <h1 id="away-zero" class="rounded large-font">0</h1>
+              </h1>
+            </div>
           </div>
         </div>
       </div>
